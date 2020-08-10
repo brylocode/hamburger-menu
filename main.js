@@ -4,7 +4,6 @@ const menuLinks = document.querySelectorAll('.menu-link');
 
 
 const openMenu = () => {
-    console.log('open');
     hamburger.classList.toggle('hamburger-active');
     menu.classList.toggle('menu-active');
 
@@ -13,7 +12,6 @@ const openMenu = () => {
     } else {
         document.body.style.overflow = 'visible'
     }
-
 }
 
 const closeMenu = () => {
@@ -23,8 +21,5 @@ const closeMenu = () => {
 menuLinks.forEach(el => {
     el.addEventListener('click', closeMenu)
 })
-
-
-
 
 hamburger.addEventListener('click', openMenu)
